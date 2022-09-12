@@ -1,0 +1,34 @@
+.table {
+
+    .tableCell{
+         color: var(--color-d);
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+ 
+    .image{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        object-fit: cover;
+    }
+    }
+
+    .status {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        &.Approved {
+            color: var(--color-d-b);
+            background-color: var(--color-l-b);
+        }
+
+        &.Pending {
+            color: var(--color-d-c);
+            background-color: var(--color-l-c);
+        }
+    }
+}

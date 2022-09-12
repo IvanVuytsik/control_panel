@@ -1,0 +1,85 @@
+.single {
+    display: flex;
+    width: 100%;
+    color: var(--color-d);
+
+    .single__container{
+        flex: 6;
+
+        .top{
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+
+            .left{
+                flex: 1;    
+                padding: 1rem;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.5);
+                box-shadow: 2px 4px 10px 1px rgba(200, 200, 200, 0.5);  
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 0.5rem;
+                    color: var(--color-d);
+                    border-radius: 0px 0px 0px 0.5rem;
+                    cursor: pointer;
+                    background-color: var(--color-f);
+                }
+
+                .item {
+                    display: flex;
+                    gap: 1rem;
+
+                    .itemImg {
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 0.5rem;
+                            color: var(--color-c);
+                        }
+
+                        .detailItem {
+                            margin-bottom: 0.5rem;
+                            font-size: 1rem;
+
+                            .itemKey {
+                                color: var(--color-e);
+                                font-weight: 600;
+                                margin-right: 0.5rem;
+                            }
+                            .itemValue {
+                                color: var(--color-c);
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom {  
+                margin: 0.5rem 1rem;
+                padding: 1rem;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.5);
+                box-shadow: 2px 4px 10px 1px rgba(200, 200, 200, 0.5);     
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: var(--color-c);
+            margin-bottom: 1rem;
+        }
+    }
+}

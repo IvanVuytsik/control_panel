@@ -1,0 +1,78 @@
+.datatable {
+    padding: 1rem;
+
+    .dataTableTitle {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            color: var(--color-c);
+            font-size: 1rem;
+            font-weight: 400;
+            border: 1px solid var(--color-c);
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+    }
+ 
+    .datagrid {
+        color: var(--color-d);
+    }
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+    }
+
+    .cellWithStatus {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        &.active {
+            color: var(--color-d-b);
+            background-color: var(--color-l-b);
+        }
+
+        &.inactive  {
+            color: var(--color-d-d);
+            background-color: var(--color-l-d);
+        }
+    }
+
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .viewButton {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--color-d-b);
+            border: 1px solid var(--color-d-b); 
+            cursor: pointer;
+        }
+
+        .deleteButton {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--color-d-d);
+            border: 1px solid var(--color-d-d); 
+            cursor: pointer;
+        }
+    }
+
+}
+
+     
